@@ -73,17 +73,6 @@ def cabecalho():
     print('|-----------------------------------------------------------------------------------------------------|')
 
 
-
-# ----------------- Funções Geradoras de Listas --------------
-
-
-# Função: Gera lista embaralhada
-def lista_aleatoria(num_elementos):
-  lista = list(range(1,num_elementos)) # Gerando uma lista ordenada
-  shuffle(lista)    # Embaralhando a lista
-  return lista
-
-
 # ----------------- Funções de Cronometragem -----------------
 
 
@@ -122,7 +111,16 @@ def quantidade_buscas(elementos, num, tempo_ordenacao):
     
     qtd_buscas += 1
   return qtd_buscas
-  
+
+# ----------------- Função Geradora de Listas --------------
+
+
+# Função: Gera lista embaralhada
+def lista_aleatoria(num_elementos):
+  lista = list(range(1,num_elementos)) # Gerando uma lista ordenada
+  shuffle(lista)    # Embaralhando a lista
+  return lista
+
 
 # ----------------- Funções de Ordenação -------------------
 
