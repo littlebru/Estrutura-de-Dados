@@ -7,7 +7,8 @@ Este programa tem como objetivo calcular o tempo que as funções de ordenação
 ### Seleção
 Realiza a ordenação de uma lista da Esquerda para a Direita, ou seja, pego o elemento da posição atual **A**  e comparo com o elemento seguinte **B**, caso:<br><br>**A < B** (**A** for menor que **B**) -> **A** continua na mesma posição e eu comparo o elemento **B** com o próximo da lista<br>**B < A** (**B** for menor que **A**) -> **B** troca de posição com **A** e eu comparo com o próximo da lista
 
-![Simulação Seleção](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Selecao.gif)                                                       
+![Simulação Seleção](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Selecao.gif)<br>
+*Simulação da ordenação da função Seleção*
 
 ### Inserção
 Realiza a ordenação de uma lista olhando apenas para a Direita, fazendo comparações de elemento por elemento.<br><br>**A** compara com **B**<br>**A** compara com **C**<br>**A** compara com **D**<br>
@@ -15,34 +16,36 @@ Realiza a ordenação de uma lista olhando apenas para a Direita, fazendo compar
 .
 .
 
-![Simulação Inserção](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Insercao.gif)                                                                                                                                           
+![Simulação Inserção](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Insercao.gif)<br>                            *Simulação da ordenação da função Inserção* 
 
 ### MergeSort (dividir, misturar e Intercalar)
 Realiza a ordenação de uma lista **A** utilizando um vetor auxiliar **B**, divide a lista em dois e ordena cada pedaço de forma individual, no final reune os dados, formando uma lista novamente tudo isso dentro do vetor **B** auxiliar, depois é enviado para o vetor original **A**.<br>
 
-![Simulação MergeSort](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/MergeSort.gif)
-
+![Simulação MergeSort](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/MergeSort.gif)<br>
+*Simulação da ordenação da função MergeSort*
 
 ### QuickSort
 Realiza a ordenação de uma lista com a ajuda de um pivô ou numero de referência para auxiliar na ordenação.<br><br>
-![Simulação Inserção](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/QuickSort.gif)
+![Simulação Inserção](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/QuickSort.gif)<br>
+*Simulação da ordenação da função QuickSort*
 
 ### Sort Nativo
 Função embutida da linguagem Python, realiza a ordenação de uma lista comparando os elementos de maior valor com os elementos seguintes.<br><br>
-![Simulação SortNativo](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/TimSort.gif)
+![Simulação SortNativo](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/TimSort.gif)<br>
+*Simulação da ordenação do método Sort*
 
 ## Funções de Busca
 No programa também foram utilizados dois algoritmos de busca, para calcular quantas buscas são realizadas durante a ordenação das listas.
 
 ### Busca Binária
 Realiza a busca de um elemento dividindo a lista em pares<br>
-![Simulação Busca Binária](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Binaria.gif)
-*Buscando pelo numero 714 na demonstração*
+![Simulação Busca Binária](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Binaria.gif)<br>
+*Simulação de buscas da função Busca Binária - Buscando pelo numero 714 na demonstração*
 
 ### Busca Sequencial
 Realiza a busca de um elemento procurando de elemento por elemento<br>
-![Simulação Busca Sequencial](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Sequencial.gif)
-*Buscando pelo numero 714 na demonstração*
+![Simulação Busca Sequencial](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Sequencial.gif)<br>
+*Simulação de buscas da função Busca Sequencial - Buscando pelo numero 714 na demonstração*
 
 ------
 
