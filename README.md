@@ -69,8 +69,9 @@ Realiza a busca de um elemento procurando de elemento por elemento<br>
 
 ## Autor
 [Bruna Larissa Clemente Gomes](https://github.com/littlebru)<br>
-Análise e Desenvolvimento de Sistemas<br>
-**3º Semestre - 2020**<br>
+3º Semestre - Análise e Desenvolvimento de Sistemas<br>
+**FATEC São José dos Campos 2020**<br>
+
 ## Orientador
 [Fernando Masanori](https://github.com/fmasanori)
 
