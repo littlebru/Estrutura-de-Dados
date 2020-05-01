@@ -1,6 +1,9 @@
 # Estrutura de Dados - Vale a Pena Ordenar? :1234:
-Este programa tem como objetivo calcular o tempo que as funções de ordenação levam para ordenar listas de **10000**, **20000** e **30000** elementos em sua composição.
+Este programa tem como objetivo calcular o tempo que as funções de ordenação levam para ordenar listas de **10000**, **20000** e **30000** elementos em sua composição, e também calcular quantas buscas são realizadas durante a ordenação dos dados.
 
+**Obs: A versão do Python utilizada neste projeto é o Python3**
+
+---
 
 ## Funções de Ordenação Utilizadas
 
@@ -10,6 +13,7 @@ Realiza a ordenação de uma lista da Esquerda para a Direita, ou seja, pego o e
 ![Simulação Seleção](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Selecao.gif)<br>
 *Simulação da ordenação da função Seleção*
 
+---
 ### Inserção
 Realiza a ordenação de uma lista olhando apenas para a Direita, fazendo comparações de elemento por elemento.<br><br>**A** compara com **B**<br>**A** compara com **C**<br>**A** compara com **D**<br>
 .
@@ -18,22 +22,26 @@ Realiza a ordenação de uma lista olhando apenas para a Direita, fazendo compar
 
 ![Simulação Inserção](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Insercao.gif)<br>                            *Simulação da ordenação da função Inserção* 
 
+---
 ### MergeSort (dividir, misturar e Intercalar)
 Realiza a ordenação de uma lista **A** utilizando um vetor auxiliar **B**, divide a lista em dois e ordena cada pedaço de forma individual, no final reune os dados, formando uma lista novamente tudo isso dentro do vetor **B** auxiliar, depois é enviado para o vetor original **A**.<br>
 
 ![Simulação MergeSort](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/MergeSort.gif)<br>
 *Simulação da ordenação da função MergeSort*
 
+---
 ### QuickSort
 Realiza a ordenação de uma lista com a ajuda de um pivô ou numero de referência para auxiliar na ordenação.<br><br>
 ![Simulação Inserção](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/QuickSort.gif)<br>
 *Simulação da ordenação da função QuickSort*
 
+---
 ### Sort Nativo
 Função embutida da linguagem Python, realiza a ordenação de uma lista comparando os elementos de maior valor com os elementos seguintes.<br><br>
 ![Simulação SortNativo](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/TimSort.gif)<br>
 *Simulação da ordenação do método Sort*
 
+---
 ## Funções de Busca
 No programa também foram utilizados dois algoritmos de busca, para calcular quantas buscas são realizadas durante a ordenação das listas.
 
@@ -42,6 +50,7 @@ Realiza a busca de um elemento dividindo a lista em pares<br>
 ![Simulação Busca Binária](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Binaria.gif)<br>
 *Simulação de buscas da função Busca Binária - Buscando pelo numero 714 na demonstração*
 
+---
 ### Busca Sequencial
 Realiza a busca de um elemento procurando de elemento por elemento<br>
 ![Simulação Busca Sequencial](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Sequencial.gif)<br>
@@ -69,8 +78,7 @@ Realiza a busca de um elemento procurando de elemento por elemento<br>
 
 ## Autor
 [Bruna Larissa Clemente Gomes](https://github.com/littlebru)<br>
-3º Semestre - Análise e Desenvolvimento de Sistemas<br>
-**FATEC São José dos Campos 2020**<br>
+3º Semestre - Análise e Desenvolvimento de Sistemas-**FATEC São José dos Campos 2020**
 
 ## Orientador
 [Fernando Masanori](https://github.com/fmasanori)
