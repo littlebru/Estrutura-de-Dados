@@ -1,7 +1,7 @@
 # Estrutura de Dados - Vale a Pena Ordenar? :1234:
-Este programa tem como objetivo calcular o tempo que as funções de ordenação levam para ordenar listas de **10000**, **20000** e **30000** elementos em sua composição, e também calcular quantas buscas são realizadas durante a ordenação dos dados.
+Este algoritmo tem por objetivo calcular o tempo que as funções de ordenação levam para ordenar listas de **10000**, **20000** e **30000** elementos em sua composição, e também calcular quantas buscas são realizadas durante a ordenação dos dados.
 
-**Obs: A versão do Python utilizada neste projeto é o Python3**
+**Obs: A versão do Python utilizada neste programa é o Python3**
 
 ---
 
