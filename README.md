@@ -4,6 +4,7 @@ O algoritmo desenvolvido ([EP1.py](https://github.com/littlebru/Estrutura-de-Dad
 **Obs: A versão do Python utilizada neste programa é o Python3**
 
 ![Algoritmo desenvolvido](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Algoritmo.gif "Saida do algoritmo")
+
 *Gif com a Saída do programa*
 
 ## Funções de Ordenação Utilizadas
