@@ -2,75 +2,82 @@
 from random import randint
 from random import random
 from random import shuffle
-import time
+from time import process_time
+from time import time
 import math
-
-# -- Função Principal-----------------------------
-def principal():
-  
-  # Declarando variaveis globais
-  global v_tempo
-  global v_buscas
-  global funcoes_ordenacao
-  global qtd_elementos
-  global tempo_inicial
-  global tempo_final
-
-  # Inicializando variaveis
-  v_tempo = [0,0,0,0,0]
-  v_buscas = [0,0,0,0,0]
-  funcoes_ordenacao = ['insercao','selecao','mergesort','quicksort','sortNativo']
-  qtd_elementos = 10000
-
-
-  cabecalho()     # Imprimindo o cabeçalho
-  
-  
-  while(qtd_elementos <= 30000):
-
-    # Marcadores de tempo
-    tempo_total = 0
-    tempo_inicial = time.time()
-    tempo_final = time.time()
-    
-    while(tempo_final - tempo_inicial < 0.30): #duração de 30 segundos
-      
-      lista_al = lista_aleatoria(qtd_elementos)    # Gerando lista embaralhada
-      numero = randint(1,qtd_elementos)            # Gerando um numero aleatorio
-      
-      for posicao in range(0,5):
-        
-        funcao = funcoes_ordenacao[posicao]       # Pegando uma função da lista
-        
-        # -- Calculando e armazenando o tempo de ordenação da função
-        tempo_total = cronometro_ordenacao(funcao,lista_al)
-        v_tempo[posicao] = tempo_total
-        
-        
-        # -- Calculando numero de buscas da função
-        total_busca = quantidade_buscas(qtd_elementos, numero, tempo_total)
-        v_buscas[posicao] = total_busca
-        
-        tempo_final = time.time()
-  
-    print(f'|   {qtd_elementos}    |   {v_tempo[0]:.2f}     {v_tempo[1]:.2f}     {v_tempo[2]:.2f}     {v_tempo[3]:.2f}     {v_tempo[4]:.2f}  |     {v_buscas[0]}     {v_buscas[1]}       {v_buscas[2]}       {v_buscas[3]}     {v_buscas[4]}   |')
-    
-    qtd_elementos += 10000
-
-  print('|------------------------------------------------------------------------------------------------|')
 
 # ----------- Cabeçalho da Aplicação -----------------------
 def cabecalho():
     print()
-    print('|-------------------------------------[EP1 - Vale a pena ordenar?]------------------------------------|')
-    print('|                 Aluna: Bruna Larissa Clemente Gomes - FATEC Sao Jose dos Campos                     |')
-    print('|                 Disciplina: Estrutura de Dados                  Turma: ADS - 3º Semestre B          |')
-    print('|                 Algoritmo escolhido:   Todos                    Duracao dos testes:    30.00        |')
-    print('|                                                                                                     |')
-    print('|                        Tempos de Ordenacao                          Numero de Buscas                |')
-    print('|-----------------------------------------------------------------------------------------------------|')
-    print('|     n      | Insercao   Selecao   Merge.   Quick.   Sort  |  Insercao Selecao  Merge.  Quick.  Sort |')
-    print('|-----------------------------------------------------------------------------------------------------|')
+    print('|------------------------------------[EP1 - Vale a pena ordenar?]------------------------------------|')
+    print('|                Aluna: Bruna Larissa Clemente Gomes - FATEC Sao Jose dos Campos                     |')
+    print('|                Disciplina: Estrutura de Dados                  Turma: ADS - 3º Semestre B          |')
+    print('|                Algoritmo escolhido:   Todos                    Duracao dos testes:   30.00s        |')
+    print('|                                                                                                    |')
+    print('|                       Tempos de Ordenacao                          Numero de Buscas                |')
+    print('|----------------------------------------------------------------------------------------------------|')
+    print('|     n     | Insercao   Selecao   Merge.   Quick.   Sort  |  Insercao Selecao  Merge.  Quick.  Sort |')
+    print('|----------------------------------------------------------------------------------------------------|')
+
+
+# Função: imprime resultados com texto formatado
+def imprime_resultados(qtd_elementos, lista_de_tempo, lista_de_buscas):
+  if len(str(qtd_elementos)) < 5 :  # caso o numero de elementos esteja entre 0 - 9999
+    print(f'|       {qtd_elementos}|   {lista_de_tempo[0]:.2f}      {lista_de_tempo[1]:.2f}      {lista_de_tempo[2]:.2f}     {lista_de_tempo[3]:.2f}     {lista_de_tempo[4]:.2f} |     {lista_de_buscas[0]}      {lista_de_buscas[1]}       {lista_de_buscas[2]}       {lista_de_buscas[3]}     {lista_de_buscas[4]}   |')
+
+  if len(str(qtd_elementos)) >= 5 : # caso o numero de elementos seja maior que 9999
+    
+    # Validação opcional para formatar posições das saidas
+    if len(str(lista_de_buscas[0]) and str(lista_de_buscas[1])) >= 3:   # Caso: o resultado de buscas tenha mais de 3 digitos
+      print(f'|      {qtd_elementos}|   {lista_de_tempo[0]:.2f}      {lista_de_tempo[1]:.2f}      {lista_de_tempo[2]:.2f}     {lista_de_tempo[3]:.2f}     {lista_de_tempo[4]:.2f} |     {lista_de_buscas[0]}      {lista_de_buscas[1]}      {lista_de_buscas[2]}       {lista_de_buscas[3]}     {lista_de_buscas[4]}   |')
+    
+    else:   #Caso o resultado de buscas tenha menos de 3 digitos
+      print(f'|      {qtd_elementos}|   {lista_de_tempo[0]:.2f}      {lista_de_tempo[1]:.2f}      {lista_de_tempo[2]:.2f}     {lista_de_tempo[3]:.2f}     {lista_de_tempo[4]:.2f} |     {lista_de_buscas[0]}      {lista_de_buscas[1]}       {lista_de_buscas[2]}       {lista_de_buscas[3]}     {lista_de_buscas[4]}   |')
+
+
+# -- Função Principal-----------------------------
+def principal():
+
+  # Marcadores de tempo de execução do programa
+  tempo_exec_inicial = time()
+  tempo_exec_final = time()
+
+  lista_de_tempo = [0,0,0,0,0]  # Armazena tempo das funções
+  lista_de_buscas = [0,0,0,0,0] # Armazena numero de buscas das funções
+
+  funcoes_ordenacao = ['insercao','selecao','mergesort','quicksort','sortNativo'] # Funções utilizadas
+  qtd_elementos = 5000  # Numero inicial de elementos
+
+  cabecalho()     # Imprimindo o cabeçalho
+    
+  while((tempo_exec_final - tempo_exec_inicial) < 30):  # Tempo limite de 30 segundos
+    
+    # Gerando lista embaralhada
+    lista_original = lista_aleatoria(qtd_elementos)
+    # Gerando uma cópia da lista
+    lista_copia = lista_original.copy()
+    
+    for posicao in range(0,5):
+      
+      # Pegando uma função da lista
+      funcao = funcoes_ordenacao[posicao]
+      
+      # Calculando e armazenando o tempo de ordenação da função
+      tempo_ordenacao = cronometro_ordenacao(funcao, lista_copia)
+      lista_de_tempo[posicao] = tempo_ordenacao
+      
+      # Calculando numero de buscas da função
+      total_busca = quantidade_buscas(lista_original, lista_copia, tempo_ordenacao, qtd_elementos)
+      lista_de_buscas[posicao] = total_busca
+      
+      tempo_exec_final = time() # Marcador de tempo
+
+    imprime_resultados(qtd_elementos, lista_de_tempo, lista_de_buscas)  # Imprimindo os resultados
+    
+    # Adicionando mais elementos a lista
+    qtd_elementos += 5000
+
+  print('|----------------------------------------------------------------------------------------------------|')
 
 
 # ----------------- Funções de Cronometragem -----------------
@@ -78,18 +85,18 @@ def cabecalho():
 
 # Função: Calcula o tempo de ordenação
 def cronometro_ordenacao(funcao, lista):
-  tempo_inicial = time.time()
+  tempo_inicial = process_time()
   exec(f'{funcao}({lista})')    # Executando a função
-  tempo_final = time.time()
+  tempo_final = process_time()
       
   return (tempo_final - tempo_inicial)    # Retornando o tempo de execução
 
 
 # Função: Calcula o tempo de buscas      
 def cronometra_busca(funcao,lista, numero):
-  tempo_inicial = time.time()
+  tempo_inicial = process_time()
   exec(f'{funcao}({lista}, {numero})')
-  tempo_final = time.time()
+  tempo_final = process_time()
   
   return (tempo_final - tempo_inicial)    # Retornando o tempo de execução
 
@@ -97,19 +104,22 @@ def cronometra_busca(funcao,lista, numero):
 
 # --------------- Função de Contagem de Buscas --------------
 
-def quantidade_buscas(elementos, num, tempo_ordenacao):
-  lista = list(range(1,elementos))
+def quantidade_buscas(lista_original, lista_copia, tempo_ordenacao, qtd_elementos):
   funcoes_busca = ['busca_binaria','busca_sequencial']
   qtd_buscas = 0
-  tempo_binaria = 0     # Tempo total busca_binaria
-  tempo_sequencial = 0  # Tempo total busca_sequencial
+  tempo_binaria = 0
+  tempo_sequencial = 0
 
   while(tempo_sequencial < tempo_ordenacao):
     
-    tempo_binaria = tempo_binaria + cronometra_busca(funcoes_busca[0], lista, num)
-    tempo_sequencial = tempo_sequencial + cronometra_busca(funcoes_busca[1], lista, num)
+    numero_aleatorio = randint(1,qtd_elementos)  # Gerando um numero aleatorio
+    
+    # Calculando tempo de busca das funções
+    tempo_binaria = tempo_binaria + cronometra_busca(funcoes_busca[0], lista_original, numero_aleatorio)
+    tempo_sequencial = tempo_sequencial + cronometra_busca(funcoes_busca[1], lista_copia, numero_aleatorio)
     
     qtd_buscas += 1
+
   return qtd_buscas
 
 # ----------------- Função Geradora de Listas --------------
@@ -221,3 +231,4 @@ def busca_sequencial(v, x):
 
 # Iniciando programa
 principal()
+
