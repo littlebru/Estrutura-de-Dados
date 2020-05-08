@@ -1,11 +1,11 @@
 # Estrutura de Dados - Vale a Pena Ordenar?
 ![Algoritmo desenvolvido](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Algoritmo.gif "Saída do programa")
-
+---
 O algoritmo desenvolvido ([EP1.py](https://github.com/littlebru/Estrutura-de-Dados/blob/master/EP1.py)) tem por objetivo calcular o tempo que as funções de ordenação levam para ordenar listas de **5000**, **10000** e **15000** elementos ou mais (dentro do tempo de 30 segundos de execução), e também calcular quantas buscas são realizadas durante a ordenação dos dados.
 
-> **Obs:** A versão do Python utilizada neste programa é o Python3
+> **Obs:** A versão do Python utilizada neste programa é ```3.6```
+<br>
 
-<br><br>
 ## Bibliotecas utilizadas
  
  ##### ``` import time  ```
@@ -14,11 +14,11 @@ O algoritmo desenvolvido ([EP1.py](https://github.com/littlebru/Estrutura-de-Dad
  Biblioteca que permite fazer calculos matematicos e funções de calculo de média por exemplo, neste programa ela foi utilizada para identificar o valor minimo dentro da lista, na função Seleção ``` m = min(v) ```
  ##### ``` import random  ```
  Biblioteca que permite a criação de numeros e listas compostas por numeros aleatórios, neste programa ele foi utilizado para gerar numeros aleatórios. 
+<br>
 
-<br><br>
 ## Funções de Ordenação Utilizadas
 
-### Seleção
+### ```Seleção```
 Realiza a ordenação de uma lista da Esquerda para a Direita, ou seja, pego o elemento da posição atual **A**  e comparo com o elemento seguinte **B**, caso:<br><br>**A < B** (**A** for menor que **B**) -> **A** continua na mesma posição e eu comparo o elemento **B** com o próximo da lista<br>**B < A** (**B** for menor que **A**) -> **B** troca de posição com **A** e eu comparo com o próximo da lista
 
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Selecao.gif" width="50%;" alt="" title="Simulação da função Seleção"/>
@@ -26,7 +26,7 @@ Realiza a ordenação de uma lista da Esquerda para a Direita, ou seja, pego o e
 *Simulação da ordenação da função Seleção*
 
 # 
-### Inserção
+### ```Inserção```
 Realiza a ordenação de uma lista olhando apenas para a Direita, fazendo comparações de elemento por elemento.
 <br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Insercao.gif" width="40%;" alt="" title="Simulação da função Inserção"/>
@@ -34,7 +34,7 @@ Realiza a ordenação de uma lista olhando apenas para a Direita, fazendo compar
 *Simulação da ordenação da função Inserção* 
 
 # 
-### MergeSort (dividir, misturar e Intercalar)
+### ```MergeSort``` (dividir, misturar e Intercalar)
 Realiza a ordenação de uma lista **A** utilizando um vetor auxiliar **B**, divide a lista em dois e ordena cada pedaço de forma individual, no final reune os dados, formando uma lista novamente tudo isso dentro do vetor **B** auxiliar, depois é enviado para o vetor original **A**.<br>
 
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/MergeSort.gif" width="40%;" alt="" title="Simulação do MergeSort"/>
@@ -42,7 +42,7 @@ Realiza a ordenação de uma lista **A** utilizando um vetor auxiliar **B**, div
 *Simulação da ordenação da função MergeSort*
 
 # 
-### QuickSort
+### ```QuickSort```
 Realiza a ordenação de uma lista com a ajuda de um pivô ou numero de referência para auxiliar na ordenação.
 <br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/QuickSort.gif" width="50%;" alt="" title="Simulação do QuickSort"/>
@@ -50,7 +50,7 @@ Realiza a ordenação de uma lista com a ajuda de um pivô ou numero de referên
 *Simulação da ordenação da função QuickSort*
 
 # 
-### Sort Nativo
+### ```Sort Nativo```
 Função embutida da linguagem Python, realiza a ordenação de uma lista comparando os elementos de maior valor com os elementos seguintes.<br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/TimSort.gif" width="50%;" alt="" title="Simulação do método sort()"/>
 
@@ -60,36 +60,38 @@ Função embutida da linguagem Python, realiza a ordenação de uma lista compar
 ## Funções de Busca
 No programa também foram utilizados dois algoritmos de busca, para calcular quantas buscas são realizadas durante a ordenação das listas.
 
-### Busca Binária
+### ```Busca Binária```
 Realiza a busca de um elemento dividindo a lista em pares
 <br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Binaria.gif" width="80%;" alt="" title="Simulação de Busca Binária"/><br>
 *Simulação de buscas da função Busca Binária - Buscando pelo numero 714 na demonstração*
 #
-### Busca Sequencial
+### ```Busca Sequencial```
 Realiza a busca de um elemento procurando de elemento por elemento
 <br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Sequencial.gif" width="80%;" alt="" title="Simulação da Busca Sequencial"/><br>
 
 *Simulação de buscas da função Busca Sequencial - Buscando pelo numero 714 na demonstração*
+<br>
 
 ## Observações
 A função **Seleção** na teoria é a pior de todas, pois ela demanda muito processamento e tem um tempo de ordenação muito lento, porém no algoritmo, podemos visualizar que a **Seleção** esta tendo um *tempo de execução* e *quantidade de buscas* menores do que a **Inserção**.
 
 Isto aconteceu porque no código a função Seleção utiliza uma estrutura auxiliar para procura do menor numero, no método min ``` m = min(v) ```, e a estrutura auxiliar utilizada é chamada de **HEAP**.
-<br><br>
-### Min Heap ou Binary Heap
-<img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Min_Heap.gif" width="90%;" alt="" title="Simulação da estrutura Heap"/>
 
-Utiliza uma estrutura de dados chamada ```heap binário``` para ordenar os elementos a medida que os insere na estrutura. Assim, ao final das inserções, os elementos podem ser sucessivamente removidos da raiz da heap, na ordem desejada.  
 
-Um ```heap binário``` é uma árvore binária mantida na forma de um vetor.  
+### ```Min Heap``` ou ```Binary Heap```
+<img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/BinaryHeap.gif" width="90%;" alt="" title="Simulação da estrutura Heap"/>
 
-O ```heap``` é gerado e mantido no próprio vetor a ser ordenado.  
+É um tipo de estrutura de dados utilizada para ordenar os elementos a medida que são inseridos na estrutura. Assim, ao final das inserções, os elementos podem ser sucessivamente removidos da raiz da heap, na ordem desejada.  
+
+- Um ```heap binário``` é uma árvore binária mantida na forma de um vetor.  
+
+- O ```heap``` é gerado e mantido no próprio vetor a ser ordenado.  
 
 Para uma ordenação crescente, deve ser construído um **heap máximo** (o maior elemento fica na raiz). Para uma ordenação decrescente, deve ser construído um **heap mínimo** (o menor elemento fica na raiz).
+<br>
 
-<br><br>
 ## Autora
 <table>
   <tr>
