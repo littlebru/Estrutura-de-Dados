@@ -1,11 +1,9 @@
 # Estrutura de Dados - Vale a Pena Ordenar? :1234:
+![Algoritmo desenvolvido](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Algoritmo.gif "Saída do programa")
+
 O algoritmo desenvolvido ([EP1.py](https://github.com/littlebru/Estrutura-de-Dados/blob/master/EP1.py)) tem por objetivo calcular o tempo que as funções de ordenação levam para ordenar listas de **5000**, **10000** e **15000** elementos ou mais (dentro do tempo de 30 segundos de execução), e também calcular quantas buscas são realizadas durante a ordenação dos dados.
 
 **Obs: A versão do Python utilizada neste programa é o Python3**
-
-![Algoritmo desenvolvido](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Algoritmo.gif "Saída do programa")
-
-*Gif com a Saída do programa*
 
 ## Funções de Ordenação Utilizadas
 
@@ -54,12 +52,12 @@ No programa também foram utilizados dois algoritmos de busca, para calcular qua
 ### Busca Binária
 Realiza a busca de um elemento dividindo a lista em pares<br>
 
-<img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Binaria.gif" width="90%;" alt="" title="Simulação de Busca Binária"/><br>
+<img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Binaria.gif" width="80%;" alt="" title="Simulação de Busca Binária"/><br>
 *Simulação de buscas da função Busca Binária - Buscando pelo numero 714 na demonstração*
 #
 ### Busca Sequencial
 Realiza a busca de um elemento procurando de elemento por elemento<br>
-<img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Sequencial.gif" width="90%;" alt="" title="Simulação da Busca Sequencial"/><br>
+<img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Sequencial.gif" width="80%;" alt="" title="Simulação da Busca Sequencial"/><br>
 
 *Simulação de buscas da função Busca Sequencial - Buscando pelo numero 714 na demonstração*
 
