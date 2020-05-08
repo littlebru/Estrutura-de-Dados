@@ -110,7 +110,7 @@ Para uma ordenação crescente, deve ser construído um **heap máximo** (o maio
  [Fernando Masanori Ashikaga](https://github.com/fmasanori)
 
 ## Bibliografia
-- Auxilio do professor Masanori
+- Auxilio do Professor Fernando Masanori
 
 #### Simulações
 As simulações foram realizadas nas plataformas:
