@@ -115,7 +115,6 @@ Para uma ordenação crescente, deve ser construído um **heap máximo** (o maio
 - Auxilio do Professor Fernando Masanori
 
 #### Simulações
-As simulações foram realizadas nas plataformas:
 - [VisuAlgo](https://visualgo.net/en)
 - [UFSCA.edu](https://www.cs.usfca.edu/~galles/visualization/Search.html)
 
