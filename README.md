@@ -57,21 +57,21 @@ Realiza a busca de um elemento procurando de elemento por elemento<br>
 *Simulação de buscas da função Busca Sequencial - Buscando pelo numero 714 na demonstração*
 
 ## Observações
-A função Seleção na teoria é a pior de todas, pois ela demanda muito processamento e tem um tempo de ordenação muito lento, porém no algoritmo, podemos visualizar que a seleção esta tendo um tempo de execução e quantidade de buscas bem menor do que a Inserção.
+A função **Seleção** na teoria é a pior de todas, pois ela demanda muito processamento e tem um tempo de ordenação muito lento, porém no algoritmo, podemos visualizar que a **Seleção** esta tendo um *tempo de execução* e *quantidade de buscas* menores do que a **Inserção**.
 
 Isto aconteceu porque no código a função Seleção utiliza uma estrutura auxiliar para procura do menor numero, no método min ``` m = min(v) ```, e a estrutura auxiliar utilizada é chamada de **HEAP**.
 
 ### Min Heap ou Binary Heap
-Utiliza uma estrutura de dados chamada heap binário para ordenar os elementos a medida que os insere na estrutura. Assim, ao final das inserções, os elementos podem ser sucessivamente removidos da raiz da heap, na ordem desejada.  
+Utiliza uma estrutura de dados chamada ```heap binário``` para ordenar os elementos a medida que os insere na estrutura. Assim, ao final das inserções, os elementos podem ser sucessivamente removidos da raiz da heap, na ordem desejada.  
 
 
-Um heap binário é uma árvore binária mantida na forma de um vetor.  
+Um ```heap binário``` é uma árvore binária mantida na forma de um vetor.  
 
 ![Simulação de estrutura Heap](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Min_Heap.gif "Simulação da estrutura Heap")
 
-O heap é gerado e mantido no próprio vetor a ser ordenado.  
+O ```heap``` é gerado e mantido no próprio vetor a ser ordenado.  
 
-Para uma ordenação crescente, deve ser construído um heap máximo (o maior elemento fica na raiz). Para uma ordenação decrescente, deve ser construído um heap mínimo (o menor elemento fica na raiz).
+Para uma ordenação crescente, deve ser construído um **heap máximo** (o maior elemento fica na raiz). Para uma ordenação decrescente, deve ser construído um **heap mínimo** (o menor elemento fica na raiz).
 
 
 ## Bibliotecas utilizadas
@@ -97,7 +97,7 @@ Para uma ordenação crescente, deve ser construído um heap máximo (o maior el
  </tr>
 </table>
  
-[Bruna Larissa Clemente Gomes](https://github.com/littlebru)
+[Bruna Larissa Clemente Gomes](https://github.com/littlebru)<br>
 3º Semestre - Análise e Desenvolvimento de Sistemas-**FATEC São José dos Campos 2020**
 
 ## Orientador
