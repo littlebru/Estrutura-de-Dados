@@ -1,10 +1,21 @@
-# Estrutura de Dados - Vale a Pena Ordenar? :1234:
+# Estrutura de Dados - Vale a Pena Ordenar?
 ![Algoritmo desenvolvido](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Algoritmo.gif "Saída do programa")
 
 O algoritmo desenvolvido ([EP1.py](https://github.com/littlebru/Estrutura-de-Dados/blob/master/EP1.py)) tem por objetivo calcular o tempo que as funções de ordenação levam para ordenar listas de **5000**, **10000** e **15000** elementos ou mais (dentro do tempo de 30 segundos de execução), e também calcular quantas buscas são realizadas durante a ordenação dos dados.
 
-**Obs: A versão do Python utilizada neste programa é o Python3**
+> **Obs:** A versão do Python utilizada neste programa é o Python3
 
+<br><br>
+## Bibliotecas utilizadas
+ 
+ ##### ``` import time  ```
+ Biblioteca que auxilia no manuseio do tempo do sistema, neste programa foi utilizado o comando  ``` time.time() ```, ele retorna o tempo em segundos, foi utilizado para marcar o tempo de execução de cada função de ordenação e de busca.
+ ##### ``` import math  ```
+ Biblioteca que permite fazer calculos matematicos e funções de calculo de média por exemplo, neste programa ela foi utilizada para identificar o valor minimo dentro da lista, na função Seleção ``` m = min(v) ```
+ ##### ``` import random  ```
+ Biblioteca que permite a criação de numeros e listas compostas por numeros aleatórios, neste programa ele foi utilizado para gerar numeros aleatórios. 
+
+<br><br>
 ## Funções de Ordenação Utilizadas
 
 ### Seleção
@@ -16,10 +27,8 @@ Realiza a ordenação de uma lista da Esquerda para a Direita, ou seja, pego o e
 
 # 
 ### Inserção
-Realiza a ordenação de uma lista olhando apenas para a Direita, fazendo comparações de elemento por elemento.<br>
-.
-.
-.
+Realiza a ordenação de uma lista olhando apenas para a Direita, fazendo comparações de elemento por elemento.
+<br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Insercao.gif" width="40%;" alt="" title="Simulação da função Inserção"/>
 
 *Simulação da ordenação da função Inserção* 
@@ -34,7 +43,8 @@ Realiza a ordenação de uma lista **A** utilizando um vetor auxiliar **B**, div
 
 # 
 ### QuickSort
-Realiza a ordenação de uma lista com a ajuda de um pivô ou numero de referência para auxiliar na ordenação.<br><br>
+Realiza a ordenação de uma lista com a ajuda de um pivô ou numero de referência para auxiliar na ordenação.
+<br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/QuickSort.gif" width="50%;" alt="" title="Simulação do QuickSort"/>
 
 *Simulação da ordenação da função QuickSort*
@@ -46,17 +56,19 @@ Função embutida da linguagem Python, realiza a ordenação de uma lista compar
 
 *Simulação da ordenação do método Sort*
 
+<br><br>
 ## Funções de Busca
 No programa também foram utilizados dois algoritmos de busca, para calcular quantas buscas são realizadas durante a ordenação das listas.
 
 ### Busca Binária
-Realiza a busca de um elemento dividindo a lista em pares<br>
-
+Realiza a busca de um elemento dividindo a lista em pares
+<br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Binaria.gif" width="80%;" alt="" title="Simulação de Busca Binária"/><br>
 *Simulação de buscas da função Busca Binária - Buscando pelo numero 714 na demonstração*
 #
 ### Busca Sequencial
-Realiza a busca de um elemento procurando de elemento por elemento<br>
+Realiza a busca de um elemento procurando de elemento por elemento
+<br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Sequencial.gif" width="80%;" alt="" title="Simulação da Busca Sequencial"/><br>
 
 *Simulação de buscas da função Busca Sequencial - Buscando pelo numero 714 na demonstração*
@@ -65,8 +77,10 @@ Realiza a busca de um elemento procurando de elemento por elemento<br>
 A função **Seleção** na teoria é a pior de todas, pois ela demanda muito processamento e tem um tempo de ordenação muito lento, porém no algoritmo, podemos visualizar que a **Seleção** esta tendo um *tempo de execução* e *quantidade de buscas* menores do que a **Inserção**.
 
 Isto aconteceu porque no código a função Seleção utiliza uma estrutura auxiliar para procura do menor numero, no método min ``` m = min(v) ```, e a estrutura auxiliar utilizada é chamada de **HEAP**.
-
+<br><br>
 ### Min Heap ou Binary Heap
+<img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Min_Heap.gif" width="90%;" alt="" title="Simulação da estrutura Heap"/>
+
 Utiliza uma estrutura de dados chamada ```heap binário``` para ordenar os elementos a medida que os insere na estrutura. Assim, ao final das inserções, os elementos podem ser sucessivamente removidos da raiz da heap, na ordem desejada.  
 
 Um ```heap binário``` é uma árvore binária mantida na forma de um vetor.  
@@ -75,24 +89,7 @@ O ```heap``` é gerado e mantido no próprio vetor a ser ordenado.
 
 Para uma ordenação crescente, deve ser construído um **heap máximo** (o maior elemento fica na raiz). Para uma ordenação decrescente, deve ser construído um **heap mínimo** (o menor elemento fica na raiz).
 
-<img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Min_Heap.gif" width="90%;" alt="" title="Simulação da estrutura Heap"/>
-
-## Bibliotecas utilizadas
- 
- ##### ``` import time  ```
- Biblioteca que auxilia no manuseio do tempo do sistema, neste programa foi utilizado o comando  ``` time.time() ```, ele retorna o tempo em segundos, foi utilizado para marcar o tempo de execução de cada função de ordenação e de busca.
- ##### ``` import math  ```
- Biblioteca que permite fazer calculos matematicos e funções de calculo de média por exemplo, neste programa ela foi utilizada para identificar o valor minimo dentro da lista, na função Seleção ``` m = min(v) ```
- ##### ``` import random  ```
- Biblioteca que permite a criação de numeros e listas compostas por numeros aleatórios, neste programa ele foi utilizado para gerar numeros aleatórios. 
-
-###### *Comando dentro da função Principal*
- ``` numero = randint(1,qtd_elementos) ``` <br> 
-###### *Embaralhando a lista com o método shuffle*
- ``` shuffle(lista)``` <br> 
- ###### *Contagem de um numero x até y-1*
- ``` range(x, y-1) ``` <br>
- 
+<br><br>
 ## Autora
 <table>
   <tr>
