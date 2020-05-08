@@ -110,6 +110,7 @@ Para uma ordenação crescente, deve ser construído um **heap máximo** (o maio
  [Fernando Masanori Ashikaga](https://github.com/fmasanori)
 
 ## Bibliografia
+- Auxilio do professor Masanori
 
 #### Simulações
 As simulações foram realizadas nas plataformas:
@@ -118,3 +119,6 @@ As simulações foram realizadas nas plataformas:
 
 #### Pesquisas
 - https://www.cos.ufrj.br/~rfarias/cos121/aula_09.html
+- https://docs.python.org/3/howto/sorting.html?highlight=timsort
+- https://docs.python.org/3/library/time.html
+- https://www.geeksforgeeks.org/python-format-function/
