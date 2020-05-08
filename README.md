@@ -118,7 +118,7 @@ As simulações foram realizadas nas plataformas:
 - [UFSCA.edu](https://www.cs.usfca.edu/~galles/visualization/Search.html)
 
 #### Pesquisas
-- https://www.cos.ufrj.br/~rfarias/cos121/aula_09.html
-- https://docs.python.org/3/howto/sorting.html?highlight=timsort
-- https://docs.python.org/3/library/time.html
-- https://www.geeksforgeeks.org/python-format-function/
+- [ufrj - aula 09](https://www.cos.ufrj.br/~rfarias/cos121/aula_09.html)
+- [Doc Python - Timsort](https://docs.python.org/3/howto/sorting.html?highlight=timsort)
+- [Doc Python - time()](https://docs.python.org/3/library/time.html)
+- [Geeks-for-Geeks](https://www.geeksforgeeks.org/python-format-function/)
