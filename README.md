@@ -93,7 +93,7 @@ Para uma ordenação crescente, deve ser construído um **heap máximo** (o maio
 ## Autora
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/littlebru"><img src="https://avatars3.githubusercontent.com/u/41810923?s=460&u=c2196ec3a4f76218d7b11bb2a9cf025d2d2e9fdc&v=4" width="70px;" alt=""/></td>
+    <td align="center"><a href="https://github.com/littlebru"><img src="https://avatars3.githubusercontent.com/u/41810923?s=460&u=c2196ec3a4f76218d7b11bb2a9cf025d2d2e9fdc&v=4" width="70px;" alt="" title="Olha eu ai"/></td>
  </tr>
 </table>
  
@@ -103,7 +103,7 @@ Para uma ordenação crescente, deve ser construído um **heap máximo** (o maio
 ## Orientador
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/fmasanori"><img src="https://avatars1.githubusercontent.com/u/977887?s=460&u=d68c50c6ac3f2845bbb48efff7c37742d3a010d0&v=4" width="70px;" alt=""/></td>
+    <td align="center"><a href="https://github.com/fmasanori"><img src="https://avatars1.githubusercontent.com/u/977887?s=460&u=d68c50c6ac3f2845bbb48efff7c37742d3a010d0&v=4" width="70px;" alt="" title="Mestre Masanori"/></td>
   </tr>
 </table>
 
