@@ -55,8 +55,8 @@ Função embutida da linguagem Python, realiza a ordenação de uma lista compar
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/TimSort.gif" width="50%;" alt="" title="Simulação do método sort()"/>
 
 *Simulação da ordenação do método Sort*
+<br>
 
-<br><br>
 ## Funções de Busca
 No programa também foram utilizados dois algoritmos de busca, para calcular quantas buscas são realizadas durante a ordenação das listas.
 
@@ -83,6 +83,8 @@ Isto aconteceu porque no código a função Seleção utiliza uma estrutura auxi
 ### ```Min Heap``` ou ```Binary Heap```
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/BinaryHeap.gif" width="90%;" alt="" title="Simulação da estrutura Heap"/>
 
+*Simulação do heap máximo*
+
 É um tipo de estrutura de dados utilizada para ordenar os elementos a medida que são inseridos na estrutura. Assim, ao final das inserções, os elementos podem ser sucessivamente removidos da raiz da heap, na ordem desejada.  
 
 - Um ```heap binário``` é uma árvore binária mantida na forma de um vetor.  
@@ -90,6 +92,20 @@ Isto aconteceu porque no código a função Seleção utiliza uma estrutura auxi
 - O ```heap``` é gerado e mantido no próprio vetor a ser ordenado.  
 
 Para uma ordenação crescente, deve ser construído um **heap máximo** (o maior elemento fica na raiz). Para uma ordenação decrescente, deve ser construído um **heap mínimo** (o menor elemento fica na raiz).
+<br>
+
+## Bibliografia
+- Auxilio do Professor Fernando Masanori
+
+#### Simulações
+ * [VisuAlgo](https://visualgo.net/en)
+ * [UFSCA.edu](https://www.cs.usfca.edu/~galles/visualization/Search.html)
+
+#### Pesquisas
+ * [ufrj - aula 09](https://www.cos.ufrj.br/~rfarias/cos121/aula_09.html)
+ * [Doc Python - Timsort](https://docs.python.org/3/howto/sorting.html?highlight=timsort)
+ * [Doc Python - time()](https://docs.python.org/3/library/time.html)
+ * [Geeks-for-Geeks](https://www.geeksforgeeks.org/python-format-function/)
 <br>
 
 ## Autora
@@ -110,16 +126,3 @@ Para uma ordenação crescente, deve ser construído um **heap máximo** (o maio
 </table>
 
  [Fernando Masanori Ashikaga](https://github.com/fmasanori)
-
-## Bibliografia
-- Auxilio do Professor Fernando Masanori
-
-#### Simulações
-- [VisuAlgo](https://visualgo.net/en)
-- [UFSCA.edu](https://www.cs.usfca.edu/~galles/visualization/Search.html)
-
-#### Pesquisas
-- [ufrj - aula 09](https://www.cos.ufrj.br/~rfarias/cos121/aula_09.html)
-- [Doc Python - Timsort](https://docs.python.org/3/howto/sorting.html?highlight=timsort)
-- [Doc Python - time()](https://docs.python.org/3/library/time.html)
-- [Geeks-for-Geeks](https://www.geeksforgeeks.org/python-format-function/)
