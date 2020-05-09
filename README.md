@@ -9,11 +9,11 @@ O algoritmo desenvolvido ([EP1.py](https://github.com/littlebru/Estrutura-de-Dad
 ## Bibliotecas utilizadas
  
  ##### ``` import time  ```
- Biblioteca que auxilia no manuseio do tempo do sistema, neste programa foi utilizado o método  ``` time.time() ```, ele retorna o tempo em segundos,e o método process_time(), retorna a soma do tempo de execução com o tempo de processamento,e os dois foram utilizados para marcar o tempo de execução de cada função de ordenação e de busca.
+ Biblioteca que auxilia no manuseio do tempo do sistema, neste programa foi utilizado o método  ``` time.time() ```, ele retorna o tempo em segundos,e o método ```process_time()```, retorna a soma do tempo de execução com o tempo de processamento,e os dois foram utilizados para marcar o tempo de execução de cada função de ordenação e de busca.
  ##### ``` import math  ```
  Biblioteca que permite fazer calculos matematicos e funções de calculo de média por exemplo, neste programa ela foi utilizada para identificar o valor minimo dentro da lista, na função Seleção ``` m = min(v) ```
  ##### ``` import random  ```
- Biblioteca que permite a criação de numeros e listas compostas por numeros aleatórios, neste programa ele foi utilizado para gerar numeros aleatórios com o metodo ```randint``` e embaralhar a lista com o método ```shuffle```
+ Biblioteca que permite a criação de numeros e listas compostas por numeros aleatórios, neste programa ele foi utilizado para gerar numeros aleatórios com o metodo ```randint``` e embaralhar a lista com o método ```shuffle```.
 <br>
 
 ## Funções de Ordenação Utilizadas
