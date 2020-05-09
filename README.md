@@ -1,4 +1,6 @@
-# Estrutura de Dados - Vale a Pena Ordenar?
+<h1>
+<img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/tree-structure.png" width="3%;" alt="" title="Mestre Masanori"/>     Estrutura de Dados - Vale a Pena Ordenar?</h1>
+
 ![Algoritmo desenvolvido](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Algoritmo.gif "Saída do programa")
 ---
 O algoritmo desenvolvido ([EP1.py](https://github.com/littlebru/Estrutura-de-Dados/blob/master/EP1.py)) tem por objetivo calcular o tempo que as funções de ordenação levam para ordenar listas de **5000**, **10000** e **15000** elementos ou mais (dentro do tempo de 30 segundos de execução), e também calcular quantas buscas são realizadas durante a ordenação dos dados.
@@ -19,7 +21,7 @@ O algoritmo desenvolvido ([EP1.py](https://github.com/littlebru/Estrutura-de-Dad
 ## Funções de Ordenação Utilizadas
 
 ### ```Seleção```
-Realiza a ordenação de uma lista da Esquerda para a Direita, ou seja, pego o elemento da posição atual **A**  e comparo com o elemento seguinte **B**, caso:<br><br>**A < B** (**A** for menor que **B**) -> **A** continua na mesma posição e eu comparo o elemento **B** com o próximo da lista<br>**B < A** (**B** for menor que **A**) -> **B** troca de posição com **A** e eu comparo com o próximo da lista
+Realiza a ordenação de uma lista olhando apenas para a Direita, fazendo comparações de elemento por elemento.
 
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Selecao.gif" width="50%;" alt="" title="Simulação da função Seleção"/>
 
@@ -27,7 +29,8 @@ Realiza a ordenação de uma lista da Esquerda para a Direita, ou seja, pego o e
 
 # 
 ### ```Inserção```
-Realiza a ordenação de uma lista olhando apenas para a Direita, fazendo comparações de elemento por elemento.
+Realiza a ordenação de uma lista da Esquerda para a Direita, ou seja, pego o elemento da posição atual **B**  e comparo com o elemento seguinte **A**, caso:<br><br>**B < A** (**B** for menor que **A**) -> **B** continua na mesma posição e eu comparo o próximo da lista  com o elemento **A**<br>**A < B** (**A** for menor que **B**) -> **A** troca de posição com **B** e eu pego o próximo da lista e comparo com o **B**
+
 <br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Insercao.gif" width="40%;" alt="" title="Simulação da função Inserção"/>
 
@@ -61,13 +64,13 @@ Função embutida da linguagem Python, realiza a ordenação de uma lista compar
 No programa também foram utilizados dois algoritmos de busca, para calcular quantas buscas são realizadas durante a ordenação das listas.
 
 ### ```Busca Binária```
-Realiza a busca de um elemento dividindo a lista em pares
+Realiza a busca de um elemento dividindo a lista ao meio tendo o ponto maximo, o ponto minimo e o ponto médio (ou ponto central) que é o responsável por buscar o elemento procurado.
 <br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Binaria.gif" width="80%;" alt="" title="Simulação de Busca Binária"/><br>
 *Simulação de buscas da função Busca Binária - Buscando pelo numero 714 na demonstração*
 #
 ### ```Busca Sequencial```
-Realiza a busca de um elemento procurando de elemento por elemento
+Realiza a busca de elemento em elemento dentro da lista, até encontrar o valor procurado.
 <br><br>
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Busca_Sequencial.gif" width="80%;" alt="" title="Simulação da Busca Sequencial"/><br>
 
@@ -84,8 +87,9 @@ Isto aconteceu porque no código a função Seleção utiliza uma estrutura auxi
 <img src="https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/BinaryHeap.gif" width="90%;" alt="" title="Simulação da estrutura Heap"/>
 
 *Simulação do heap máximo*
+<h1>                                                                 </h1>
 
-É um tipo de estrutura de dados utilizada para ordenar os elementos a medida que são inseridos na estrutura. Assim, ao final das inserções, os elementos podem ser sucessivamente removidos da raiz da heap, na ordem desejada.  
+O Heap Binário um tipo de estrutura de dados utilizado para ordenar os elementos a medida que são inseridos na estrutura. Assim, ao final das inserções, os elementos podem ser sucessivamente removidos da raiz da heap, na ordem desejada.  
 
 - Um ```heap binário``` é uma árvore binária mantida na forma de um vetor.  
 
