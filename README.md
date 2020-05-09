@@ -89,7 +89,7 @@ Isto aconteceu porque no código a função Seleção utiliza uma estrutura auxi
 *Simulação do heap máximo*
 <h1>                                                                 </h1>
 
-O Heap Binário um tipo de estrutura de dados utilizado para ordenar os elementos a medida que são inseridos na estrutura. Assim, ao final das inserções, os elementos podem ser sucessivamente removidos da raiz da heap, na ordem desejada.  
+O Heap Binário é um tipo de estrutura de dados utilizado para ordenar os elementos a medida que são inseridos na estrutura. Assim, ao final das inserções, os elementos podem ser sucessivamente removidos da raiz da heap, na ordem desejada.  
 
 - Um ```heap binário``` é uma árvore binária mantida na forma de um vetor.  
 
