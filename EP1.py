@@ -17,7 +17,6 @@ def principal():
   lista_de_tempo = [0,0,0,0,0]  # Armazena tempo das funções
   lista_de_buscas = [0,0,0,0,0] # Armazena numero de buscas das funções
 
-# Funções utilizadas
   funcoes_ordenacao = ['insercao','selecao','mergesort','quicksort','sortNativo'] 
 # Numero inicial de elementos
   qtd_elementos = 5000  
@@ -58,6 +57,7 @@ def principal():
   print('|----------------------------------------------------------------------------------------------------|')
 
 
+
 # ----------------- Funções de Cronometragem -----------------
 
 
@@ -89,8 +89,9 @@ def quantidade_buscas(lista_original, lista_copia, tempo_ordenacao, qtd_elemento
   qtd_buscas = 0
   tempo_binaria = 0
   tempo_sequencial = 0
+  tempo_total = 0
 
-  while(tempo_sequencial <= tempo_ordenacao):
+  while(tempo_total <= tempo_ordenacao):
     
     numero_aleatorio = randint(1,qtd_elementos)  # Gerando um numero aleatorio
     
@@ -98,6 +99,8 @@ def quantidade_buscas(lista_original, lista_copia, tempo_ordenacao, qtd_elemento
     tempo_binaria = tempo_binaria + cronometra_busca(funcoes_busca[0], lista_original, numero_aleatorio)
     tempo_sequencial = tempo_sequencial + cronometra_busca(funcoes_busca[1], lista_copia, numero_aleatorio)
 
+    tempo_total += tempo_sequencial + tempo_binaria
+    
     # Contagem de buscas
     qtd_buscas += 1
 
@@ -182,7 +185,7 @@ def quicksort(v):
 # Função nativa da linguagem para ordenação de listas
 
 def sortNativo(v):
-  sorted(v)
+  return v.sort()
 
 
 # ----------------- Funções de Buscas -------------------
@@ -245,7 +248,7 @@ def imprime_resultados(qtd_elementos, lista_de_tempo, lista_de_buscas):
   if len(str(qtd_elementos)) >= 5 : 
     
     # Caso: o resultado de buscas tenha mais de 3 digitos
-    if len(str(lista_de_buscas[0]) and str(lista_de_buscas[1])) >= 3:   
+    if :   
       print(f'|      {qtd_elementos}|   {lista_de_tempo[0]:.2f}      {lista_de_tempo[1]:.2f}      {lista_de_tempo[2]:.2f}     {lista_de_tempo[3]:.2f}     {lista_de_tempo[4]:.2f} |     {lista_de_buscas[0]}      {lista_de_buscas[1]}      {lista_de_buscas[2]}       {lista_de_buscas[3]}     {lista_de_buscas[4]}   |')
     
     #Caso o resultado de buscas tenha menos de 3 digitos
