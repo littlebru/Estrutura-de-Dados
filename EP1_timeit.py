@@ -43,6 +43,9 @@ def principal():
   print('|----------------------------------------------------------------------------------------------------|')
 
 
+# ----------------- Funções de Cronometragem -----------------
+
+# Função: Calcula o tempo de ordenação
 def calcula_tempo_ordenacao(lista):
   funcoes = ['insercao', 'selecao', 'mergesort', 'quicksort','sort_nativo'] # Funções de ordenação
   tempos = []
@@ -52,9 +55,11 @@ def calcula_tempo_ordenacao(lista):
 
   return tempos     # retornando lista com o tempo de todas as funções
 
-
+# Função: Calcula o tempo de buscas
 def calcula_tempo_buscas(funcao, lista):
   return timeit(f"{funcao}({lista})", setup=f"from  __main__ import {funcao}")
+
+# --------------- Função de Contagem de Buscas --------------
 
 def calcula_buscas(tempo_ordenacao, lista_embaralhada, lista_ordenada, qtd_elementos):
   qtd_buscas = 0
@@ -146,8 +151,7 @@ def quicksort(v):
 # Função nativa da linguagem para ordenação de listas
 
 def sort_nativo(v):
-  v.sort()
-  return v
+  return v.sort()
 
 
 # ----------------- Funções de Buscas -------------------
