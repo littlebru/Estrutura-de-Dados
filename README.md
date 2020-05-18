@@ -3,7 +3,7 @@
 
 ![Algoritmo desenvolvido](https://github.com/littlebru/Estrutura-de-Dados/blob/master/simulacoes/Algoritmo.gif "Saída do programa")
 ---
-O algoritmo desenvolvido ([EP1.py](https://github.com/littlebru/Estrutura-de-Dados/blob/master/EP1.py)) e ([EP1_timeit.py](https://github.com/littlebru/Estrutura-de-Dados/blob/master/EP1_timeit.py)) tem por objetivo calcular o tempo que as funções de ordenação levam para ordenar listas de **5000**, **10000** e **15000** elementos ou mais (dentro do tempo de 30 segundos de execução), e também calcular quantas buscas são realizadas durante a ordenação dos dados.
+Os algoritmos desenvolvidos ([EP1.py](https://github.com/littlebru/Estrutura-de-Dados/blob/master/EP1.py)) e ([EP1_timeit.py](https://github.com/littlebru/Estrutura-de-Dados/blob/master/EP1_timeit.py)) tem por objetivo calcular o tempo que as funções de ordenação levam para ordenar listas de **5000**, **10000** e **15000** elementos ou mais (dentro do tempo de 60 segundos de execução), e também calcular quantas buscas são realizadas durante a ordenação dos dados.
 
 > **Obs:** A versão do Python utilizada neste programa é ```3.6```
 <br>
